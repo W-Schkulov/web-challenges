@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="Personal_Website/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/45a93db9c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <i class="fa-solid fa-fish"></i>
+        <h1>new fish in the pool</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#About_Me">About Me</a></li>
+        <li><a href="#Tech_Stack">Tech Stack</a></li>
+        <li><a href="#portfolio">My portfolio</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="About_Me">
+        <h2>Hi there, I'm Wladimir Schkulov</h2>
+        <ul>
+          <li>Name: Wladimir Schkulov</li>
+          <li>Age: 29</li>
+          <li>Location: Haltern am See, Germany</li>
+          <li>Currently Learning: Web Development at neuefische</li>
+          <li>Hobbies: Anime, Gaming, and Coding</li>
+        </ul>
+        <p>
+          I'm an aspiring web developer currently honing my skills at
+          neuefische. My journey into the world of coding has just begun and is
+          driven by my love for problem-solving and creativity. From a young
+          age, I have always been fascinated by how things work, and this
+          curiosity naturally led me to web development.
+        </p>
+        <p>
+          When I'm not learning, you can find me immersed in anime series,
+          exploring virtual worlds through gaming, or discovering new
+          technologies and techniques to improve my development skills. These
+          hobbies not only provide a fun escape but also inspire my work as a
+          developer. The intricate storylines, complex characters, and stunning
+          visuals in anime often spark ideas for my projects.
+        </p>
+        <p>
+          In the ever-evolving field of technology, I am committed to continuous
+          learning and growth. I regularly explore new tools and techniques,
+          stay updated with industry trends, and experiment with innovative
+          solutions to enhance my skill set. Through dedication, creativity, and
+          a relentless pursuit of excellence, I am determined to make my mark in
+          the world of web development.
+        </p>
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1526925539332-aa3b66e35444?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="coding1"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1566837945700-30057527ade0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="coding2"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1592609931095-54a2168ae893?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="coding3"
+          />
+        </div>
+      </section>
+
+      <section id="Tech_Stack">
+        <h2>Tech Stack</h2>
+        <ul class="tech-stack__list" role="list">
+          <li class="tech-stack__list-item">HTML</li>
+          <li class="tech-stack__list-item">CSS</li>
+          <li class="tech-stack__list-item">JavaScript</li>
+          <li class="tech-stack__list-item">React</li>
+          <li class="tech-stack__list-item">Node.js</li>
+          <li class="tech-stack__list-item">MongoDB</li>
+        </ul>
+      </section>
+      <section id="portfolio" class="portfolio-layout">
+        <h2>My portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="project-card">
+            <h3>Calculator</h3>
+            <p>My first experiment with JavaScript</p>
+            <div id="calculator">
+              <input id="display" readonly />
+              <div id="keys">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button class="button" onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button class="button" onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button class="button" onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button class="button" onclick="appendToDisplay('-')">-</button>
+                <button class="button" onclick="clearDisplay()">AC</button>
+                <button class="button" onclick="calculate()">=</button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Quiz</h3>
+            <body>
+              <div id="quiz">
+                  <h2 id="question"></h2>
+                  <div id="answers"></div>
+                  <div id="result"></div>
+                  <button id="next" onclick="displayNextQuestion()">Nächste Frage</button>
+              </div>
+            <script src="quiz.js"></script>
+          </div>
+          <div class="project-card">
+            <h3>Project 3</h3>
+            <p>description</p>
+            <img src="projekt3.jpg" alt="Projekt 3" />
+            <a href="project3.html">learn more about</a>
+          </div>
+        </div>
+      </section>
+      <section id="Contact">
+        <form>
+          <label>
+            Name:
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" placeholder="Email address" />
+          </label>
+          <button type="submit">Click for contact!</button>
+        </form>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Wladimir Schkulov 2024</p>
+    </footer>
+  </body>
+</html>
