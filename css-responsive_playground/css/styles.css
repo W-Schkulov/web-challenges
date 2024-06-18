@@ -104,15 +104,3 @@ h1 {
   height: auto;
   max-width: 100%;
 }
-
-@media (min-width: 600px) {
-  .box--five img {
-    content: url("./img/cat_medium.jpg");
-  }
-}
-
-@media (min-width: 1200px) {
-  .box--five img {
-    content: url("./img/cat_large.jpg");
-  }
-}
