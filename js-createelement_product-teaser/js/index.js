@@ -10,7 +10,7 @@ const price = "149,99 €";
 const imageSrc =
   "https://unsplash.com/photos/3VOTHTrE614/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NTM3NTA2&force=true&w=640";
 
-const copy = `<h1>Products</h1>
+const copy = `
     <article class="product">
       <div class="product__body">
         <div class="product__text-container">
