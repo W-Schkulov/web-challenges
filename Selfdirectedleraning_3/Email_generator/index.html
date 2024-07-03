@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="email-form" data-js="email_form">
+        <label for="first-name">First Name</label>
+        <input
+          name="first-name"
+          id="first-name"
+          data-js="first_name"
+          required
+        />
+        <label for="last-name">Last Name</label>
+        <input name="last-name" id="last-name" data-js="last_name" required />
+        <button type="submit">Generate Email</button>
+      </form>
+      <div class="output">
+        Generated Email: <span data-js="generated-email">...</span>
+      </div>
+    </div>
+  </body>
+</html>
