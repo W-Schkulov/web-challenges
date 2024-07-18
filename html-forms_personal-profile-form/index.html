@@ -25,22 +25,24 @@
           <label for="birthday">Your Birthday</label>
           <input type="date" name="birthday" id="birthday" />
         </fieldset>
-        <p>
+        <p id="description">
           Can u tell us a little bit more? We want to annoy yout with unwanted
           ads.
         </p>
-        <fieldset>
+        <fieldset aria-labelledby="description">
           <legend>Further Information</legend>
           <label for="color">Favourite Color:</label>
           <input type="color" name="color" id="color" value="default" />
           <label for="pet">What's your favourite pet?</label>
           <select name="pet" id="pet">
-            <option value="" selected disabled></option>
+            <option value="" selected disabled>
+              --Please choose an option--
+            </option>
             <option value="cat">Cat</option>
             <option value="dog">Dog</option>
           </select>
-          <button type="submit">Submit</button>
         </fieldset>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </body>
