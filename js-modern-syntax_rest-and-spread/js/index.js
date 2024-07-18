@@ -23,6 +23,7 @@ export const { age, ...contact } = person;
 
 const list = ["one", "two", "three", "four", "five"];
 export const [first, second, ...restOfList] = list;
+console.log(restOfList);
 
 // EXERCISE 3
 // a) The `add` function does not work because it needs an array as argument.

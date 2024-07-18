@@ -11,9 +11,9 @@ async function fetchUserData(url) {
       throw new Error(`Failed to fetch data! Status Code: ${response.status}`);
     }
 
-    const contentType = response.headers.get("content-type").split(";");
+    const contentType = response.headers.get("content-type");
     if (!contentType || !contentType.includes("application/json")) {
-      throw new Error(`Unexpected content-type: ${contentType[0]}`);
+      throw new Error(`Unexpected content-type: ${contentType}`);
     }
 
     return await response.json();
