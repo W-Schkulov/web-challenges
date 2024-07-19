@@ -1,9 +1,14 @@
 import "./styles.css";
 
 export default function App() {
-  return <Greeting name="Felix" />;
+  return (
+    <>
+      <Greeting name="Wladimir" />
+      <Greeting name="Felix" isCouch />;
+    </>
+  );
 }
 
-function Greeting({ name }) {
-  return <h1>Hello, {name}!</h1>;
+function Greeting({ name, isCouch }) {
+  return <h1>Hello, {isCouch ? "Couch" : name}!</h1>;
 }
