@@ -6,7 +6,11 @@ export default function App() {
   const validCode = "🐡🐠🐋";
 
   const handleClick = (event) => {
+<<<<<<< HEAD
     setCode((prevCode) => prevCode + event.target.textContent);
+=======
+    setCode(code + event.target.textContent);
+>>>>>>> 59fa5df (solved emoji checker)
   };
 
   const resetCode = () => {
